@@ -7,7 +7,12 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(word_length)
-  word_length.map {|string| string.length}
+  actual_length << word_length.map {|string| string.length}
+  if actual_length.each > 4
+    true
+  else
+    false
+  end
 end
 
 def find_the_cheese(cheese)
