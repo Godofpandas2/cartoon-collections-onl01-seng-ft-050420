@@ -9,11 +9,7 @@ end
 def long_planeteer_calls(word_length)
   actual_length = []
   actual_length << word_length.map {|string| string.length}
-  if actual_length.each > 4
-    true
-  else
-    false
-  end
+  actual_length.include?(5..7)
 end
 
 def find_the_cheese(cheese)
